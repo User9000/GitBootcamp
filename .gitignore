@@ -1,0 +1,12 @@
+#a comment - this is ignored
+#ignore all .txt files
+*.txt
+#but do track lib.txt, even though you're ignoring .txt files above
+!lib.txt
+#only ignore the root TODO file, not subdir/TODO
+/TODO
+#ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+#ignore all .txt files in the doc/ directory
+doc/**/*.txt
+
